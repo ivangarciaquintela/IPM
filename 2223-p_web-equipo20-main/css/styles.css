@@ -1,0 +1,316 @@
+:root{
+    --color_texto: rgb(0, 0, 0);
+    --box_shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --background_input : rgba(255, 255, 255, 0.16);
+    --background_hlist : rgba(255, 255, 255, 0.16);
+    --background_hover : #a881af85;
+
+
+}
+
+
+html{
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(207,254,252);
+    background: linear-gradient(190deg, rgba(45,207,194,1) 24%, rgba(133,241,215,1) 47%, rgba(45,207,194,1) 50%);
+    background-size: auto;
+    background-repeat: repeat;
+}
+.lista{
+
+    text-align: center;
+}
+
+
+.imgli{
+width: 50px;
+height: 50px;
+}
+
+
+.hlist{
+margin-left: auto;
+margin-right: auto;
+
+background: var(--background_hlist);
+border-radius: 16px;
+box-shadow: var(--box_shadow);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    width: 75%;
+}
+
+.hlist li {
+    border: transparent;
+    border-radius: 30%;
+    display:inline-block;
+    padding-right:25%;
+    margin-right:10px;
+
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 5%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_texto)!important;
+    background: rgba(255, 255, 255, 0.2);border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+
+.nome{
+    border: 0px;
+    border-bottom: 1px solid rgb(73, 68, 68);
+    height: 30px;
+    width: 50%;
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+
+background: var(--background_input);
+border-radius: 16px;
+box-shadow:  var(--box_shadow);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.fecha{
+    border: 0px;
+    border-bottom: 1px solid rgb(73, 68, 68);
+    height: 30px;
+    width: 50%;
+    font-size: 20px;
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+background: rgba(255, 255, 255, 0.16);
+border-radius: 16px;
+box-shadow:  var(--box_shadow);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+margin: 20px;
+
+}
+
+.numero{
+
+    border: 0px;
+    border-bottom: 1px solid rgb(73, 68, 68);
+    height: 30px;
+    width: 50%;
+    display: block;
+    margin-top: 5px;
+    margin: 20px;
+
+    font-size: 20px;
+    padding: 10px;
+background: var(--background_input);
+border-radius: 16px;
+box-shadow: var(--box_shadow);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.radio{
+    margin:20px;
+
+
+}
+
+.radio fieldset{
+    font-size: 20px;    
+    background: var(--background_input);
+    border-radius: 16px;
+    box-shadow: var(--box_shadow);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.radio label{
+    display: block;
+}
+
+label {
+    color: var(--color_texto);
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+
+
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+}
+.submit{
+    border-radius: 20px;
+    height: 50px;
+    width: 50%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(185, 218, 138, 0.3);
+    background: var(--background_input);
+}
+
+.submit:hover{
+    border-radius: 20px;
+    height: 50px;
+    width: 50%;
+    background: var(--background_hover);
+    box-shadow:  var(--box_shadow);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(185, 218, 138, 0.3);
+}
+
+.pie{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 2px;
+}
+
+ul{
+    display: flex;
+    align-items: flex-start;
+    padding-inline-start: 15%;
+}
+
+
+@media screen and (max-width: 570px) {
+    .hlist {
+      font-size: 20px;
+    }
+    .imgli{
+        width: 25px;
+        height: 25px;
+    }
+    form {
+        font-size: 5px;
+      }
+    h1{
+        font-size: 20px;
+    }
+    .nome{
+        font-size: 15px;
+        height: 20px;
+
+    }
+    .fecha{
+        font-size: 15px;
+        height: 20px;
+    }
+    .numero{
+        font-size: 15px;
+        height: 20px;
+    }
+    .radio fieldset{
+        height: 82px;
+    }
+    .submit{
+        height: 25px;
+    }
+    label{
+        font-size: 15px;
+    }
+    legend{
+        font-size: 15px;
+        margin-bottom: -8px;
+    }
+    p{
+        font-size: 10px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .hlist {
+      font-size: 15px;
+    }
+    .imgli{
+        width: 20px;
+        height: 20px;
+    }
+
+    h1{
+        font-size: 10px;
+    }
+    .nome{
+        font-size: 12px;
+        height: 18px;
+
+    }
+    .fecha{
+        font-size: 12px;
+        height: 18px;
+    }
+    .numero{
+        font-size: 12px;
+        height: 18px;
+    }
+    .radio fieldset{
+        height: 77px;
+    }
+    .submit{
+        height: 22px;
+    }
+    label{
+        font-size: 12px;
+    }
+    legend{
+        font-size: 12px;
+        margin-bottom: -8px;
+    }
+    p{
+        font-size: 8px;
+    }
+  }
+
+
+@media screen and (orientation:landscape) {
+.nome{
+    display: inline-flex;
+}
+.fecha{
+    display: inline-flex;
+    margin-bottom: 40px;
+}
+.numero{
+    display: inline-flex;
+
+}
+.radio label{
+    display: initial;
+}
+
+
+
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Equipo 20</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <script src = "js/javascript.js"></script>
+    <div role="list" class="lista">
+        <h1>Lista no ordenada</h1>
+        <ul id="ulist" class="hlist">
+            <li>Item 1<img class="imgli" src="/img/item1.png" alt="item1"></li>
+            <li>Item 2<img class="imgli" src="/img/item2.png" alt="item2"></li>
+            <li>Item 3<img class="imgli" src="/img/item3.png" alt="item3"></li>
+            <li id="perfil"></li>
+        </ul>
+    </div>
+    <form class="card" id="formulario">            
+            <div><label for="nome">Nombre y Apellidos</label>
+            <input class="nome" id="nome" type="text" name="nome"/>
+
+            <div><label for="fechaNac">Fecha Nacimiento</label>
+            <input class="fecha" id="fechaNac" type="date" name="fechaNac"/>
+
+            <div><label for="udFamiliar">Numero de componentes de la unidad familiar:</label>
+            <input class="numero"  id="udFamiliar" type="number" name="udFamiliar"
+                min="1" max="10"></div>
+
+            <div role="radiogroup" class="radio">
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <label for="hombre">
+                        <input class="cbox" type="radio" name="sexo" id="hombre"> Hombre
+                    </label>
+                    <label for="mujer">
+                        <input class="cbox" type="radio" name="sexo" id="mujer">  Mujer
+                    </label>
+                    <label for="otro">
+                        <input class="cbox" type="radio" name="sexo" id="otro">  Otro
+                    </label>
+                </fieldset>
+			</div>
+		
+            <div role="button" class="button">
+                <input class="submit"  onclick="siguiente()" type="submit" value="Submit now" /> 
+            </div>
+            
+    </form>
+    <footer class="pie">
+        <p>Autores:</p>
+        <p>Mateo Amado Ares</p>
+        <p>Ibrahim Méndez Fernández</p>
+        <p>Ivan Garcia Quintela</p>
+    </footer>
+</body>
+</html>
